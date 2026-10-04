@@ -1,0 +1,26 @@
+PING      : +PONG
+
+SET       : +OK
+
+GET       : $2
+25
+
+EXISTS    : :1
+
+SIZE      : :1
+
+SET TTL   : +OK
+
+GET k     : $1
+v
+
+GET k x2  : $-1
+
+DEL       : :1
+
+GET depois: $-1
+
+BAD GET   : -ERR wrong_number_of_arguments
+
+UNKNOWN   : -ERR unknown
+
